@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://pharmdb.c3usgo2iex04.ap-northeast-2.rds.amazonaws.com:3306/pharm?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: pharmquest1!
+  jpa:
+    hibernate:
+      ddl-auto: update # 테이블 자동 생성 및 업데이트
+    show-sql: true # 실행되는 SQL 출력
+    properties:
+      hibernate.format_sql: true # SQL 포맷팅
+
+logging:
+  level:
+    root: DEBUG
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
